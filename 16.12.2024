@@ -1,0 +1,13 @@
+"""
+Si definisca la funzione func1(string_list, word) che prende in ingresso una
+lista di stringhe 'string_list' e una parola 'word' e cancella in maniera distruttiva
+da string_list tutte le stringhe che contengono 'word'.
+La funzione restituisce il numero di stringhe rimosse."""
+
+def func1(string_list, word):
+    counter = 0
+    for i in string_list[0:]:  
+        if word in i:
+            string_list.remove(i) 
+            counter += 1
+    return counter
