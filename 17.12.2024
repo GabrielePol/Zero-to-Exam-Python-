@@ -1,0 +1,14 @@
+"""
+Exercise about Strings
+
+Count the vowels inside a string
+"""
+
+
+def count_vowels(s):
+    counter = 0
+    vowels = ["a","e","i","o","u"]
+    for i in s:
+        if i in vowels:
+            counter += 1
+    return counter
