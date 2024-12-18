@@ -1,0 +1,17 @@
+"""
+Exercises about Dictionaries, Strings, Lists and more
+
+From elementary exercise to Hard
+"""
+
+def create_student_scores():
+    student_score = {}
+    for _ in range(5):
+        nome = input("Inserire nome studente: ")
+        voto = int(input("Inserire voto studente: "))
+        student_score[nome] = voto
+    return student_score
+
+
+
+  
