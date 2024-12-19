@@ -24,3 +24,9 @@ def read_lines(x):
         for row in file:
             print(row.strip())
 
+4) Append in a file
+
+def def add_file(x):
+    with open(x, "a") as file:
+        file.write(input("Enter the text: "))
+
