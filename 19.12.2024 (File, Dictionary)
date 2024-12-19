@@ -1,0 +1,26 @@
+"""
+Introduction to the File in Python
+"""
+
+1)How to create a new file and write inside: 
+
+def create_file(x, content):
+    with open(x, "w") as file:
+        file.write(content)
+
+
+
+2)How to read a file:
+
+def read_file(x):
+    with open(x, "r") as file:
+       display = file.read()
+       print(display)
+
+3)How to read line x line in a file:
+
+def read_lines(x):
+    with open(x,"r") as file:
+        for row in file:
+            print(row.strip())
+
