@@ -1,0 +1,18 @@
+"""
+Dictionaries, Strings, Lists, Recursion, File
+
+
+
+"""
+
+def sort_students(x):
+    new_list = sorted(list(x.items()))
+    return new_list
+
+
+def sorted_products(x):
+    new_list = sorted(x.items(), key=lambda item: (item[1], item[0]))
+    return new_list
+
+
+
