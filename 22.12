@@ -1,0 +1,13 @@
+"""
+File, Dictionaries, Recursion, Strings
+"""
+
+def rimuovi_punteggiatura_file(x,y):
+    punteggiatura = " ,.;!:?"" "
+    testo_y = ""
+    with open(x, "r") as file:
+        for i in file.read():
+            if i not in punteggiatura:
+                testo_y += i
+    with open(y, "w") as file:
+        file.write(testo_y)
