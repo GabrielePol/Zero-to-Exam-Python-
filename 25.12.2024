@@ -1,5 +1,5 @@
 """
-Binary Tree, File, Dictionary, Recursion
+Binary Tree, File, Dictionary, Recursion, Lists of List(Tables)
 """
 
 class Nodo:
@@ -13,3 +13,14 @@ radice.sinistro = Nodo ("Memorie")
 radice.destro = Nodo ("CPU")
 radice.sinistro.sinistro = Nodo("ROM")
 radice.sinistro.destro = Nodo ("RAM")
+
+
+"""
+This function calculates the average of the values in a specific column of a table
+"""
+def calculate_average(x,y):
+    sum_table = 0
+    average = len(x)
+    for i in x:
+        sum_table += i[y]
+    return sum_table/average
