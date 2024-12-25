@@ -1,0 +1,15 @@
+"""
+Binary Tree, File, Dictionary, Recursion
+"""
+
+class Nodo:
+    def __init__(self, dato):
+        self.dato = dato
+        self.sinistro = None
+        self.destro = None
+        
+radice = Nodo("Calcolatore")
+radice.sinistro = Nodo ("Memorie")
+radice.destro = Nodo ("CPU")
+radice.sinistro.sinistro = Nodo("ROM")
+radice.sinistro.destro = Nodo ("RAM")
