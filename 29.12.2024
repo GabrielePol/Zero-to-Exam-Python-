@@ -1,0 +1,11 @@
+"""
+Recursion
+"""
+
+
+
+def somma_lista(lista):
+    if len(lista)==0:
+        return 0
+    else:
+        return lista[0]+(somma_lista(lista[1:]))
