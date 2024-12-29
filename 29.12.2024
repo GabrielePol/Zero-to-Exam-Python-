@@ -3,9 +3,21 @@ Recursion
 """
 
 
+#Funzione che ci permette di sommare tra di loro gli elementi all'interno di una lista
 
 def somma_lista(lista):
     if len(lista)==0:
         return 0
     else:
         return lista[0]+(somma_lista(lista[1:]))
+
+
+#Funzione per contare gli elementi di una lista in modo ricorsivo
+
+def conta_elementi(lista):
+    if len(lista)==0:
+        return 0
+    else:
+        return 1+(conta_elementi(lista[1:]))
+    
+    
