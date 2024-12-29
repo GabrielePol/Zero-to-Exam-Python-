@@ -1,5 +1,5 @@
 """
-Recursion
+Recursion, Tree
 """
 
 
@@ -19,5 +19,42 @@ def conta_elementi(lista):
         return 0
     else:
         return 1+(conta_elementi(lista[1:]))
+
+
+
+"""
+Dato un albero di tipo AlberoBinario, ritorna il numero di nodi che nell'albero 
+hanno esattamente 2 figli.
+"""
+
+
+class Nodo:
+    def __init__(self, valore, sinistro = None, destro = None):
+        self.valore = valore
+        self.sinistro = sinistro
+        self.destro = destro
+        
     
+    
+
+Famiglia = Nodo("Famiglia")
+Genitori = Nodo("Andrea/Chiara")
+Figlio = Nodo("Massimo")
+Figlia = Nodo ("Giulia")
+Nonni = Nodo ("Paolo/Marina")
+
+Famiglia.sinistro = Genitori
+Famiglia.destro = Nonni
+Genitori.sinistro = Figlio
+Genitori.destro = Figlia
+
+def count_nodes(Nodo):
+    counter = 0
+    if Nodo == None:
+        return 0
+    elif Nodo.sinistro is not None and Nodo.destro is not None:
+        counter += 1
+    counter += count_nodes(Nodo.sinistro)
+    counter += count_nodes(Nodo.destro)
+    return counter
     
