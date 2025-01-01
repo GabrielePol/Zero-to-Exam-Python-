@@ -1,0 +1,20 @@
+"""
+Images,Matrix
+
+"""
+
+red = 255,0,0,
+green = 0,255,0
+blue = 0,0,255
+def create(larghezza, altezza, colore):
+    img = []
+    for _ in range(altezza): #righe==altezza immagine
+        row = []
+        for _ in range(larghezza): #colonne==larghezza immagine
+            row.append(colore)
+    img.append(row)
+    return img
+
+
+image_1 = create(255,255,red)
+image.save("image_1.png",image_1)
