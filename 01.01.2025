@@ -17,4 +17,5 @@ def create(larghezza, altezza, colore):
 
 
 image_1 = create(255,255,red)
+image.visd(image_1)
 image.save("image_1.png",image_1)
